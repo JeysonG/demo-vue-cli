@@ -1,6 +1,6 @@
 <template lang="pug">
   #app
-    img(src='./assets/logo.png')
+    img(src='https://jeysong.github.io/demo-vue-cli/dist/logo.png')
     h1 {{ msg }}
 
     select(v-model="selectedCountry")
