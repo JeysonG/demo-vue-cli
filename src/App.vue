@@ -1,5 +1,6 @@
 <template lang="pug">
   #app
+    google_translate_element
     img(src='/assets/logo.png')
     //- img(src='https://jeysong.github.io/demo-vue-cli/dist/logo.png')
     h1 {{ msg }}
@@ -11,10 +12,10 @@
 
     ul
       artist(v-for="artist in artists" v-bind:artist="artist" v-bind:key="artist.mbid")
-
 </template>
 
 <script>
+import GoogleTranslate from './components/GoogleTranslate.vue'
 import Spinner from './components/Spinner.vue'
 import getArtists from './service'
 import Artist from './components/Artist.vue'
